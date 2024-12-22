@@ -57,6 +57,28 @@
             border-radius: 50%;
             object-fit: contain;
         }
+
+        /* Adjustments for mobile */
+        @media (max-width: 768px) {
+            body {
+                background-position: 20% center; /* Shifts the background slightly to the left */
+            }
+
+            .text-box {
+                width: 90%; /* Make the text-box fit smaller screens */
+                right: 5%; /* Adjust right margin for better positioning */
+                padding: 15px;
+            }
+
+            .text-content {
+                font-size: 20px; /* Smaller font size for mobile */
+            }
+
+            .icon {
+                width: 70px; /* Smaller icons for mobile */
+                height: 70px;
+            }
+        }
     </style>
 </head>
 <body>
