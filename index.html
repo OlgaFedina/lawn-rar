@@ -15,6 +15,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            position: relative; /* Added position relative */
         }
         .text-box {
             position: absolute;
@@ -55,7 +56,8 @@
         }
         @media (max-width: 768px) {
             body {
-                background-position: 30% center; /* Changed from 70% to 30% to shift right */
+                background-position: right -200px center; /* New positioning strategy */
+                background-size: auto 100vh; /* Force full height */
             }
             .text-box {
                 width: 90%;
