@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAWN RAR SOL!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #FFDAB9;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            padding: 100px 20px;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 20px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 60px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 200px;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+
+        .stat-label {
+            color: #666;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .footer .button {
+            display: inline-block;
+            padding: 10px 25px;
+            font-size: 18px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            margin: 5px;
+            transition: transform 0.3s;
+        }
+
+        .footer .button:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 36px;
+            }
+            .subtitle {
+                font-size: 20px;
+            }
+            .stats {
+                gap: 20px;
+            }
+            .stat-box {
+                min-width: 150px;
+            }
+            .logo img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="hero">
+            <div class="logo">
+                <img src="lawn-rar.png" alt="Memecoin Logo">
+            </div>
+            <h1 class="title">LAWN RAR</h1>
+            <p class="subtitle">Unfortunate Lion in an Unfortunate Place</p>
+            <a href="https://pump.fun/coin/F15Vp1vqJdQ58Usk4T4GDcL7YGegcp1pznHrpt9opump" class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-value">At the Shanghai Natural History Museum, this lion, named Meng, has become a bit of a crowd favorite for its odd expression. It looks like it just heard some surprising news and isn’t quite sure how to feel about it. Once a majestic king of the savannah, it now brings a bit of personality to the museum, making it a memorable and amusing stop for visitors of all ages.</div>
+                <div class="stat-label"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://dexscreener.com/solana/9o5jrynqseee4wuaruli8druwkxxweucxbmq979fkdb7" target="_blank" class="button">DexScreener</a>
+            <a href="https://t.me/lawnrarcommunity" target="_blank" class="button">Telegram</a>
+        </div>
+    </div>
+
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80 },
+                color: { value: '#ff6b6b' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out'
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            }
+        });
+    </script>
+</body>
+</html>
