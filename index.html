@@ -11,11 +11,22 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            background-image: url('lion-king2.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative; /* Added position relative */
+            overflow: hidden;
+            position: relative;
+        }
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
         .text-box {
             position: absolute;
@@ -25,6 +36,7 @@
             padding: 20px;
             border-radius: 8px;
             width: 800px;
+            z-index: 2;
         }
         .text-content {
             color: black;
@@ -55,9 +67,10 @@
             object-fit: contain;
         }
         @media (max-width: 768px) {
-            body {
-                background-position: right -200px center; /* New positioning strategy */
-                background-size: auto 100vh; /* Force full height */
+            .background-image {
+                object-position: 80% center; /* This will shift the image right */
+                width: 150%; /* Make image wider than screen */
+                margin-left: -25%; /* Pull it back to the left a bit */
             }
             .text-box {
                 width: 90%;
@@ -75,6 +88,9 @@
     </style>
 </head>
 <body>
+    <div class="background-container">
+        <img src="lion-king2.png" alt="Background" class="background-image">
+    </div>
     <div class="text-box">
         <div class="text-content" style="margin-bottom: 50px;">
             Polite lion is currently at the Shanghai Natural History museum. Look at that smile.
