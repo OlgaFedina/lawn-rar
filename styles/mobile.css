@@ -18,8 +18,8 @@ body {
 .background-image {
     object-position: 0% center;
     width: 150%;
-    background-position: 70% bottom; 
-    /* margin-left: -25%; */
+    /* background-position: 70% bottom;  */
+    margin-left: -25%;
     height: 100%;
     object-fit: cover;
 }
