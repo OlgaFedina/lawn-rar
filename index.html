@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,86 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>$LAWN rar</title>
     <link rel="icon" type="image/x-icon" href="images/lawn-rar.png">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            overflow: hidden;
-            position: relative;
-        }
-        .background-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .background-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        .text-box {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: rgba(255, 218, 185, 0.8);
-            padding: 20px;
-            border-radius: 8px;
-            width: 800px;
-            z-index: 2;
-        }
-        .text-content {
-            color: black;
-            font-size: 30px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            margin-left: 20px;
-            margin-right: 20px;
-            font-family: "Comic Neue", serif;
-            font-weight: 700;
-            font-style: normal;
-        }
-        .icon-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .icon {
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-            margin: 0 10px;
-        }
-        .icon img {
-            width: 90%;
-            height: 90%;
-            border-radius: 50%;
-            object-fit: contain;
-        }
-        @media (max-width: 768px) {
-            .background-image {
-                object-position: 0% center; /* This will shift the image right */
-                width: 150%; /* Make image wider than screen */
-                margin-left: -25%; /* Pull it back to the left a bit */
-            }
-            .text-box {
-                width: 90%;
-                right: 20%;
-                padding: 15px;
-            }
-            .text-content {
-                font-size: 20px;
-            }
-            .icon {
-                width: 70px;
-                height: 70px;
-            }
-        }
-    </style>
+    <!-- Load desktop styles for larger screens -->
+    <link rel="stylesheet" media="(min-width: 769px)" href="styles/desktop.css">
+    <!-- Load mobile styles for smaller screens -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="styles/mobile.css">
 </head>
 <body>
     <div class="background-container">
@@ -100,7 +25,7 @@
             <a href="https://dexscreener.com/solana/9o5jrynqseee4wuaruli8druwkxxweucxbmq979fkdb7" class="icon"><img src="images/dex.png" alt="Icon 2"></a>
             <a href="https://pump.fun/coin/F15Vp1vqJdQ58Usk4T4GDcL7YGegcp1pznHrpt9opump" class="icon"><img src="images/pumpfun.png" alt="Icon 3"></a>
             <a href="https://x.com/LawnRar_On_Sol" class="icon"><img src="images/x.png" alt="Icon 3"></a>
-            <a href="https://www.youtube.com/shorts/_N7OJ_TTpTk" class="icon" style=""><img src="images/youtube.png" alt="Icon 3"></a>
+            <a href="https://www.youtube.com/shorts/_N7OJ_TTpTk" class="icon"><img src="images/youtube.png" alt="Icon 3"></a>
         </div>
         <div class="text-content">
             ca: F15Vp1vqJdQ58Usk4T4GDcL7YGegcp1pznHrpt9opump
@@ -108,18 +33,3 @@
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
