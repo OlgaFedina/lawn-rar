@@ -8,9 +8,90 @@
     <title>$LAWN rar</title>
     <link rel="icon" type="image/x-icon" href="images/lawn-rar.png">
     <!-- Load desktop styles for larger screens -->
-    <link rel="stylesheet" media="(min-width: 769px)" href="styles/desktop.css">
-    <!-- Load mobile styles for smaller screens -->
-    <link rel="stylesheet" media="(max-width: 768px)" href="styles/mobile.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* Styles for desktop */
+        @media (min-width: 768px) {
+            .background-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+            }
+        }
+        
+        /* Styles for mobile */
+        @media (max-width: 767px) {
+            .background-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+                transform: translateX(20%);
+            }
+        }
+
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .text-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 218, 185, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            width: 800px;
+            z-index: 2;
+        }
+
+        .text-content {
+            color: black;
+            font-size: 30px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-family: "Comic Neue", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .icon img {
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
     <div class="background-container">
