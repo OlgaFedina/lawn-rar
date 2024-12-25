@@ -45,7 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 220px;
+  /*margin-top: 220px;*/
 }
 h1 {
   font-family: "Bangers", sans-serif;
@@ -119,7 +119,7 @@ iframe {
 
   .text {
     width: 90%;
-    margin-top: 110px;
+    margin-top: 90px;
   }
   .video {
     width: 90%;
