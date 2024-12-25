@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.043);
+
+  background-image: url("./images/lion-king.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  height: 100vh;
+
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.socials img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0px 3px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
+}
+
+.socials img:hover {
+  transform: translateY(-5px); /* Moves the image slightly upward */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.content {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.text {
+  background-color: rgba(255, 255, 255, 0.781);
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 220px;
+}
+h1 {
+  font-family: "Bangers", sans-serif;
+  font-size: 5em; /* Large text size */
+  color: #c03212; /* Fun color */
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 25px 0 0 0;
+}
+h2 {
+  font-family: "Bangers", sans-serif;
+  font-size: 2em; /* Large text size */
+  color: #c03212; /* Fun color */
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  text-align: start;
+  margin: 0px 0 0 0;
+}
+.video {
+  margin: 20px auto;
+  position: relative;
+  width: 560px;
+  height: 640px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4), 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.ticker img {
+  height: 100px;
+}
+.ticker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.socials {
+  margin: 10px 0;
+}
+.face {
+  color: #c03212;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    align-items: flex-start;
+    background-position: 35% top;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 200px;
+  }
+
+  .text {
+    width: 90%;
+    margin-top: 110px;
+  }
+  .video {
+    width: 90%;
+    height: 250px;
+    margin-top: -50px;
+  }
+}

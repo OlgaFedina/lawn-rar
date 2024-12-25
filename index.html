@@ -1,112 +1,52 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <title>$LAWN rar</title>
-    <link rel="icon" type="image/x-icon" href="images/lawn-rar.png">
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        /* Styles for desktop */
-        @media screen and (min-width: 768px) {
-            .background-container {
-                position: fixed;
-                top: 0;
-                left: 0;
-                overflow: hidden;
-            }
-            .background-image {
-                width: 100;
-                height: 100svh;
-                object-fit: cover;
-                /*object-position: center;*/
-            }
-        }
-        
-        /* Styles for mobile 767px */
-        @media screen and (max-width: 767px) {
-            .background-container {
-                
-            }
-            .background-image {
-                height: 100vh;
-                margin-left: 20%;
-                
-            }
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$LAWN</title>
+    <link rel="icon" href="./images/facee.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-        .text-box {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: rgba(255, 218, 185, 0.8);
-            padding: 20px;
-            border-radius: 8px;
-            width: 800px;
-            z-index: 2;
-        }
 
-        .text-content {
-            color: black;
-            font-size: 30px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            margin-left: 20px;
-            margin-right: 20px;
-            font-family: "Comic Neue", serif;
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        .icon-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .icon {
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-            margin: 0 10px;
-        }
-
-        .icon img {
-            width: 90%;
-            height: 90%;
-            border-radius: 50%;
-            object-fit: contain;
-        }
-    </style>
 </head>
 <body>
-    <div class="background-container">
-        <img src="images/lawn-king.png" alt="Background" class="background-image">
+    <div class="content">
+
+        <div class="text">
+            <div class="ticker">
+                <h1>$LAWN</h1><img src="./images/facee.png" alt="">
+                <h2>Rar</h2>
+            </div>
+            <div class="face">
+                <h4>CA: F15Vp1vqJdQ58Usk4T4GDcL7YGegcp1pznHrpt9opump</h4>
+            </div>
+
+            <div class="socials">
+                <a href="https://t.me/lawnrarcommunity" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/telegram.png" alt=""></a>
+
+                <a href="https://x.com/LawnRar_On_Sol" target="_blank" rel="noopener noreferrer"> <img
+                        src="./images/x.png" alt=""></a>
+
+                <a href=" https://dexscreener.com/solana/9o5jrynqseee4wuaruli8druwkxxweucxbmq979fkdb7" target="_blank"
+                    rel="noopener noreferrer"> <img src="./images/dex (1).png" alt=""></a>
+            </div>
+
+        </div>
+        <div class="video"> 
+            <iframe width="360" height="640"
+                src="https://www.youtube.com/embed/_N7OJ_TTpTk?autoplay=1&mute=1&loop=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
     </div>
-    <div class="text-box">
-        <div class="text-content" style="margin-bottom: 50px;">
-            Polite lion is currently at the Shanghai Natural History museum. Look at that smile.
-        </div>
-        <div class="icon-container">
-            <a href="https://t.me/lawnrarcommunity" class="icon"><img src="images/telegram.png" alt="Icon 1"></a>
-            <a href="https://dexscreener.com/solana/9o5jrynqseee4wuaruli8druwkxxweucxbmq979fkdb7" class="icon"><img src="images/dex.png" alt="Icon 2"></a>
-            <a href="https://pump.fun/coin/F15Vp1vqJdQ58Usk4T4GDcL7YGegcp1pznHrpt9opump" class="icon"><img src="images/pumpfun.png" alt="Icon 3"></a>
-            <a href="https://x.com/LawnRar_On_Sol" class="icon"><img src="images/x.png" alt="Icon 3"></a>
-            <a href="https://www.youtube.com/shorts/_N7OJ_TTpTk" class="icon"><img src="images/youtube.png" alt="Icon 3"></a>
-        </div>
-        <div class="text-content">
-            ca: F15Vp1vqJdQ58Usk4T4GDcL7YGegcp1pznHrpt9opump
-        </div>
+
+    </div>
     </div>
 </body>
+
 </html>
