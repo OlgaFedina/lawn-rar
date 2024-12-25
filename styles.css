@@ -119,11 +119,12 @@ iframe {
 
   .text {
     width: 90%;
-    margin-top: 90px;
+    margin-top: 250px;
   }
   .video {
-    width: 90%;
+    display: none;
+    /*width: 90%;
     height: 250px;
-    margin-top: -50px;
+    margin-top: -50px;*/
   }
 }
