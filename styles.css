@@ -100,7 +100,17 @@ iframe {
   color: #c03212;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
-
+.description {
+  color: #c03212;
+  margin: 10px;
+}
+.footer{
+  margin-top: auto;
+  position: fixed;
+  left: 50;
+  bottom: 0;
+  text-shadow: 1px 2px 20px black;
+}
 @media screen and (max-width: 768px) {
   body {
     display: flex;
@@ -126,5 +136,12 @@ iframe {
     /*width: 90%;
     height: 250px;
     margin-top: -50px;*/
+  }
+  .footer{
+  margin-top: auto;
+  position: fixed;
+  left: 50;
+  bottom: 0;
+  padding: 10px;
   }
 }
